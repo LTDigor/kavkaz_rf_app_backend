@@ -1,4 +1,4 @@
-package com_vk.kavkaz_rf
+package com.vk.kavkazrf
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -6,6 +6,6 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class KavkazRfApplication
 
-fun main(args: Array<String>) {
-    runApplication<KavkazRfApplication>(*args)
+fun main() {
+    runApplication<KavkazRfApplication>()
 }
