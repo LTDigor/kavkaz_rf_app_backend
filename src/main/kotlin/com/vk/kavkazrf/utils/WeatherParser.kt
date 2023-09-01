@@ -15,6 +15,7 @@ object WeatherParser {
                 windSpeedVal = htmlDoc.select("#table-current .wind-icon__val").text(),
                 windDirectionX = htmlDoc.select("#table-current .wind-icon__val").attr("x"),
                 windDirectionY = htmlDoc.select("#table-current .wind-icon__val").attr("y"),
+                weatherStatus = htmlDoc.select("#table-current > td").first { it.hasAttr("colspan") }.text(),
             ),
             weatherForecast = parseForecastList(htmlDoc),
         )

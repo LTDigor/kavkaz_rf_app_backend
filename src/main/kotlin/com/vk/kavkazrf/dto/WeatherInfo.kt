@@ -20,4 +20,5 @@ data class CurrentWeather(
     val windSpeedVal: String,
     val windDirectionX: String,
     val windDirectionY: String,
+    val weatherStatus: String,
 )
