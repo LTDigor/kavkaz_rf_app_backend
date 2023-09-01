@@ -32,8 +32,8 @@ object WeatherParser {
 
         return List(tablesLen) {
             PredictedWeather(
-                minTemperatureValue = tempTable.select("td")[it].text().split("|")[0].trim(),
-                maxTemperatureValue = tempTable.select("td")[it].text().split("|")[1].trim(),
+                minTemperatureValue = tempTable.select("td")[it].text().split("|")[0].trim() + "C",
+                maxTemperatureValue = tempTable.select("td")[it].text().split("|")[1].trim() + "C",
                 windSpeedVal = windTable.select("text.wind-icon__val")[it].text(),
                 windDirection = degreesToStringPresentation(
                     windTable.select("g.wind-icon__arrow")[it].attr("transform")
